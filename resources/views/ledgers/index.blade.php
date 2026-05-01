@@ -127,7 +127,7 @@
                     <thead class="bg-gray-100 dark:bg-gray-700">
                         <tr>
 
-                            <th class="border border-gray-300 dark:border-gray-600 p-2">Type</th>
+                            <th class="border border-gray-300 dark:border-gray-600 p-2">Type test</th>
                             <th class="border border-gray-300 dark:border-gray-600 p-2">Amount</th>
                             <th class="border border-gray-300 dark:border-gray-600 p-2">Date</th>
                             <th class="border border-gray-300 dark:border-gray-600 p-2">User</th>
