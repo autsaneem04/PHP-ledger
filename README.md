@@ -99,13 +99,13 @@ php artisan migrate --seed
 
 ## 🔑 บัญชีเข้าใช้งานสำหรับทดสอบระบบ (Seed Accounts)
 
-หากต้องการทดสอบระบบหลังรันคำสั่ง `--seed` สามารถใช้ข้อมูลเข้าใช้งานด้านล่างนี้ได้ทันที:
+ระบบใช้ **Username** ในการเข้าสู่ระบบ สามารถใช้ข้อมูลจำลองด้านล่างนี้เพื่อทดสอบได้ทันทีหลังรันคำสั่ง Seed:
 
 *   **ผู้ดูแลระบบ (Super User):**
-    *   **Email:** `admin@example.com`
+    *   **Username:** `admin` (อีเมล: `admin@example.com`)
     *   **Password:** `password`
 *   **ผู้ใช้งานทั่วไป:**
-    *   **Email:** `user@example.com`
+    *   **Username:** `user` (อีเมล: `user@example.com`)
     *   **Password:** `password`
 
 ---
