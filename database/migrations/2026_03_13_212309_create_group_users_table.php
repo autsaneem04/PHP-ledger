@@ -28,10 +28,18 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropForeign(['group_user_id']);
-            $table->dropColumn(['group_user_id','is_enable']);
-        });
+        if (Schema::hasColumn('users', 'group_user_id')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->dropForeign(['group_user_id']);
+                $table->dropColumn('group_user_id');
+            });
+        }
+
+        if (Schema::hasColumn('users', 'is_enable')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->dropColumn('is_enable');
+            });
+        }
 
         Schema::dropIfExists('group_users');
     }
